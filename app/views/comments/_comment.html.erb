@@ -1,0 +1,11 @@
+<p>
+  <b>Commenter:</b>
+  <%= comment.commenter %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= comment.body %>
+</p>
+<h3>Votes in Favour: <%= comment.votes_for %></h3>
+<%= link_to('vote for this response!', vote_up_comment_path(@post), :method => :post) %>
